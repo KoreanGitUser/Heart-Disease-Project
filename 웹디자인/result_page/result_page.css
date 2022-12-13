@@ -1,0 +1,638 @@
+@font-face {
+    font-family: 'MYHaemalgeunSangsang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYHaemalgeunSangsang.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EF_WAKEUP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/EF_WAKEUP.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EF_YOONY';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/EF_YOONY.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EarlyFontDiary';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MapoBackpacking';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoBackpackingA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Binggrae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/***************
+**** Default****
+***************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+}
+img {
+    vertical-align: middle;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: #f9f8e7;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/************
+****Header***
+************/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color : #313132;
+    padding: 10px 20px;
+}
+
+header h1 {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+header ul li {
+    display: inline-block;
+    margin-inline: 32px;
+    align-items: center;
+}
+
+header .head-btn a {
+    font-size: 22px;
+}
+
+header nav {
+    align-items: center;
+    margin : 0 auto;
+}
+
+.middle-menu {
+    transition: all 0.7s;
+}
+
+.middle-menu:focus {
+    outline: none;
+}
+
+.middle-menu:hover {
+    background-color: #525253;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+header .right-menu {
+    align-items: right;
+}
+
+header ul li:last-child {
+    margin-inline: 30px;
+}
+
+header ul li a {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+header img{
+    width: 60px;
+    padding-top: 5px;
+    transition: all 0.4s;
+}
+
+header img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.middle-menu a {
+    color:rgb(204, 204, 204);
+    transition: all 0.5s
+}
+
+.middle-menu a:hover {
+    color: #ffffff;
+}
+
+.search {
+    top: 27px;
+    right:110px;
+    text-align: center;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background-color: #dad8d8;
+    border-radius: 30px;
+    color: gray;
+    font-size: 20px;
+    border: 2px solid #5a5959;
+    z-index: 2;
+    display: none;
+}
+
+.search-appear {
+    animation: appear 0.3s ease;
+    display: inline-block;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        right: 90px;
+    }
+
+    to {
+        opacity: 1;
+        right: 110px;
+    }
+}
+
+/*********
+**footer**
+*********/
+#footer {
+    align-self: bottom;
+    position: absolute;
+    display: block;
+    align-items: bottom;
+    width: 100%;
+    height: 80px;
+    background-color : #f9f9f9;
+}
+
+#footer .copyright {
+    float: left;
+    width: 50%;
+}
+
+#footer .address {
+    float: right;
+    width: 50%; 
+}
+
+#footer .copyright p {
+    font-size: 14px;
+    color: #999;
+    padding : 32px 0 0 40px;
+}
+
+#footer .address p {
+    text-align: right;
+    font-size: 14px;
+    color: #999;
+    padding: 32px 40px 0 0;
+}
+
+/**************
+**result-page**
+****************/
+
+main {
+    margin: 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+    height: 105vh;
+}
+
+.big-title .header-text {
+    text-align: center;
+}
+
+.main-content {
+    margin: 20px 0 0;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+#section {
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+#section button {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+    transition: all 0.2s;
+    font-weight: bold;
+    font-size: 28px;
+    width: 200px;
+}
+
+#section button:hover, button:focus {
+    transform: scale(0.92) translateY(10px);
+    cursor: pointer;
+}
+
+.text-div {
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
+    margin : 20px 5px 0 10px;
+}
+
+/**************
+**hover-sight**
+**************/
+#hover-box {
+    font-family: 'S-CoreDream-3Light';
+}
+
+.box {
+    box-shadow: 5px 5px 15px rgba(105, 180, 246, 0.8);
+    position: absolute;
+    width: 90%;
+    height: 70vh;
+    border: 2px solid #69b4f6;
+    text-align: left;
+    margin-top: 70px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    display: none;
+}
+
+.hd-visible {
+    display: inline-block;
+    right: 70px;
+    animation: up-slide 0.6s ease-in-out forwards;
+}
+
+@keyframes up-slide {
+    from {
+        opacity: 0;
+        bottom: -150px;
+    }
+
+    to {
+        opacity: 1;
+        bottom: -85px;
+    }
+}
+
+.ex-txt {
+    margin-top: 25px;
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    font-family: 'Binggrae';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.st-visible {
+    display: inline-block;
+    right: 70px;
+    animation: up-slide 0.6s ease-in-out forwards;
+}
+
+.di-visible {
+    /* top: 279px; */
+    right: 70px;
+    display: inline-block;
+    animation: up-slide 0.6s ease-in-out forwards;
+}
+
+.as-visible {
+    display: inline-block;
+    right: 70px;
+    animation: up-slide 0.6s ease-in-out forwards;
+}
+
+.kd-visible {
+    display: inline-block;
+    right: 70px;
+    animation: up-slide 0.6s ease-in-out forwards;
+}
+
+/***********
+*adjust div*
+************/
+
+.flex-div {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.top-content {
+    width: 100%;
+    height: 50%;
+}
+
+.bottom-content {
+    width: 100%;
+    height: 50vh;
+}
+
+
+/********************* 예방 가능 **************************/
+
+.active-prevent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.ac-pre-1, .ac-pre-2, .ac-pre-3 {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+
+/************************하지 말아야 할 것***********************/
+
+.dont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.dont-1, .dont-2, .dont-3 {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.dont-img-1 {
+    margin-left: 50px;
+}
+
+.dont-img-2 {
+    margin-left: 95px;
+}
+
+.dont-img-3 {
+    margin-left: 20px;
+}
+
+.di-img1 {
+    margin-left: 5px;
+}
+
+.di-img3, .kd-img3 {
+    margin-left: 56px;
+}
+
+.as-img2 {
+    margin-left: 10px;
+}
+
+.kd-img2 {
+    margin-left: 35px;
+}
+
+/***************좋은결과? ㅋㅋㅋ ****************/
+
+.doit {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rest {
+    width: 100%;
+    height: 11.5%;
+    font-size: 37px;
+    font-weight: bold;
+    font-family: 'MapoBackpacking';
+}
+
+.rest-img {
+    margin-right: 7px;
+    width: 40vw;
+    height: 55vh;
+    border-radius: 15px;
+}
+
+.txt-space2 {
+    margin-left: 100px;
+}
+
+.txt-space3, .txt-space5 {
+    margin-left: 270px;
+}
+
+.txt-space4 {
+    margin-left: 190px;
+}
+
+.img1 {
+    width: 32vw;
+}
+/*************** 결과 모달창 전체 통제 *************/
+
+.img-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.big-title {
+    text-align: center;
+}
+
+.empty-div {
+    height: 100%;
+}
+
+.img-div img {
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+}
+
+.img-div span {
+    margin: 8px 0 0 20px;
+}
+
+.img-div2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+/***************
+***word- game***
+***************/
+
+.firstsight {
+    display: flex;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 75vh;
+    justify-items: space-around;
+    text-align: center;
+}
+
+.firstsight .w-game {
+    width: 100%;
+    height: 100%;
+    color: #4240aa;
+    background-color: #f9f8e7;
+    border-radius: 10px;
+}
+
+.firstsight h1 {
+    font-family: 'EF_WAKEUP';;
+    margin: 20px 0 20px;
+    letter-spacing: 1px;;
+}
+
+.firstsight .w-input1, .w-input2, .w-input3, .w-input4, .w-input5 {
+    margin: 5.5px;
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0,0,0, 1);
+    transition: all 0.2s;
+}
+
+.firstsight .w-input1:focus, .w-input2:focus, .w-input3:focus, .w-input4:focus, .w-input5:focus {
+    transform: scale(0.95) translateY(5px);
+    box-shadow: 2px 2px 4px rgba(0,0,0, 0.7);
+}
+
+.firstsight .wg-submit {
+    padding: 10px 20px 10px;
+    background-color: #6bd6f4;
+    border-radius: 8px;
+    transition: all 0.3s;
+    border: 2px solid #057eff;
+    transform: scale(1);
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.firstsight .wg-submit:hover {
+    cursor: pointer;
+    background-color: #97e3f7;
+    box-shadow: 1px 1px 10px rgba(88, 183, 255, 0.8);
+    border: 2px solid #5582fd;
+    transform: scale(0.92);
+}
+
+/*********범례*********/
+
+.w-game .explanation .ex {
+    position: absolute;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.w-game .txt {
+    position: absolute;
+    font-family: 'EF_WAKEUP';
+    font-size: 1.35em;
+}
+
+.w-game .a {
+    top: 125.5vh;
+    left: 65px;
+    left: 90px;
+}
+
+.w-game .b {
+    top: 130vh;
+    left: 65px;
+    left: 90px;
+}
+
+.w-game .c {
+    top: 134.5vh;
+    left: 65px;
+    left: 90px;
+}
+
+.w-game .d {
+    top: 139vh;
+    left: 20px;
+    left: 90px;
+}
+
+.w-game .explanation .right {
+    background-color: #4BE785;
+    top: 125vh;
+    left: 30px;
+}
+
+.w-game .explanation .near-right {
+    background-color: #EEFC7D;
+    top: 129.5vh;
+    left: 30px;
+}
+
+.w-game .explanation .wrong {
+    background-color: #CFC6C8;
+    top: 134vh;
+    left: 30px;
+}
