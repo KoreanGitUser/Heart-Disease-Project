@@ -9,9 +9,9 @@
 
 2. 사용기술
 
-   - backend: python 3.8+ - Flask
+   - backend: Flask( python 3.8+ )
    - Frontend: HTML5, CSS3, JavaScript, Jquery
-   - Machine learning: Python3.8+ - Scikit-learn
+   - Machine learning: Scikit-learn ( python 3.8+ )
 
 3. Preprocessing
 
